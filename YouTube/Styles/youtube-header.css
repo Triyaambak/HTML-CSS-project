@@ -1,0 +1,179 @@
+.header{
+    display: flex;
+    height: 57px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom: 1px solid #dedede;
+    z-index: 100;
+}
+
+.header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.youtube-logo{
+    height: 20px;
+    cursor:pointer
+}
+
+.header-middle{
+    display: flex;
+    flex: 1;
+    margin-left: 60px;
+    align-items: center;
+    max-width: 450px;
+}
+
+.input-bar {
+    height: 36px;
+    flex:1;
+    min-width: 0px;
+    padding-left: 12px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: inset 0px 1px 2px #eeeeee;
+    width: 0px;
+}
+
+.input-bar::placeholder{
+    font-size: 16px;
+}
+
+.header-middle-button1{
+    height: 40px;
+    width:64px;
+    border: 1px solid #cccccc;
+    border-left: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    margin-right: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-middle-button1-image{
+    height: 24px;
+}
+
+.header-middle-button2{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f8f8f8;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-middle-button2-image{
+    height: 24px;
+}
+
+.header-middle-button1 .tooltip,.header-middle-button2 .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.header-middle-button1:hover .tooltip,.header-middle-button2:hover .tooltip {
+    opacity: 1;
+}
+
+.header-right{
+    margin-right: 24px;
+    margin-left: 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 182px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.upload-img , .apps-img , .notification-img {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-img .tooltip, .apps-img .tooltip, .notification-img .tooltip{
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.upload-img:hover .tooltip,.apps-img:hover .tooltip,.notification-img:hover .tooltip {
+    opacity: 1;
+}
+
+.header-right-image1{
+    height: 24px;
+}
+
+.header-right-image2 {
+    height: 24px;   
+}
+
+.header-right-image3{
+    height: 24px;
+}
+
+.notification-img {
+    position: relative;
+}
+
+.notification-number {
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: -3px;
+    right: -4px;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.header-right-image4 {
+    height: 32px;
+    border-radius: 16px;
+}
+
+
